@@ -1,4 +1,9 @@
 # My Matebook 14 (2021) configurations
+
+<div align="center">
+ <img src=".github/img/screenshot.png" width="85%"/>
+</div>
+
 ## Enabled service(s)/timer(s)
   * `fstrim.timer`
   * `tlp.service` (Requires _tlp_ package)
