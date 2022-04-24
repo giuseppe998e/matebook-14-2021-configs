@@ -20,6 +20,7 @@ $ sudo systemctl enable fstrim.timer tlp.service
   * [`intel-media-sdk`](https://archlinux.org/packages/community/x86_64/intel-media-sdk)
   * [`libva-utils`](https://archlinux.org/packages/community/x86_64/libva-utils)
   * [`libva-vdpau-driver`](https://archlinux.org/packages/extra/x86_64/libva-vdpau-driver)
+  * [`linux-firmware`](https://archlinux.org/packages/core/any/linux-firmware)
   * [`nerd-fonts-hack`](https://aur.archlinux.org/packages/nerd-fonts-hack)
   * [`noto-fonts-emoji`](https://archlinux.org/packages/extra/any/noto-fonts-emoji)
   * [`papirus-icon-theme`](https://archlinux.org/packages/community/any/papirus-icon-theme)
@@ -36,5 +37,5 @@ $ sudo systemctl enable fstrim.timer tlp.service
   * [`zsh-syntax-highlighting`](https://archlinux.org/packages/community/any/zsh-syntax-highlighting)
 
 ```
-$ yay -S adw-gtk3 capitaine-cursors gdm-plymouth-nox intel-media-driver intel-media-sdk libva-utils libva-vdpau-driver nerd-fonts-hack noto-fonts-emoji papirus-icon-theme plymouth powertop starship tlp toolbox vdpauinfo vulkan-intel xorg-xwayland-hidpi-git zsh zsh-autosuggestions zsh-syntax-highlighting
+$ yay -S adw-gtk3 capitaine-cursors gdm-plymouth-nox intel-media-driver intel-media-sdk libva-utils libva-vdpau-driver linux-firmware nerd-fonts-hack noto-fonts-emoji papirus-icon-theme plymouth powertop starship tlp toolbox vdpauinfo vulkan-intel xorg-xwayland-hidpi-git zsh zsh-autosuggestions zsh-syntax-highlighting
 ```
