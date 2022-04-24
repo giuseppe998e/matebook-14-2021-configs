@@ -6,10 +6,11 @@
 
 ## Enabled service(s)/timer(s)
   * `fstrim.timer`
+  * `thermald.service` (Requires _thermald_ package)
   * `tlp.service` (Requires _tlp_ package)
 
 ```
-$ sudo systemctl enable fstrim.timer tlp.service
+$ sudo systemctl enable --now fstrim.timer thermald.service tlp.service
 ```
 
 ## Packages
@@ -27,6 +28,7 @@ $ sudo systemctl enable fstrim.timer tlp.service
   * [`plymouth`](https://aur.archlinux.org/packages/plymouth)
   * [`powertop`](https://archlinux.org/packages/community/x86_64/powertop)
   * [`starship`](https://archlinux.org/packages/community/x86_64/starship)
+  * [`thermald`](https://archlinux.org/packages/community/x86_64/thermald)
   * [`tlp`](https://archlinux.org/packages/community/any/tlp)
   * [`toolbox`](https://archlinux.org/packages/community/x86_64/toolbox)
   * [`vdpauinfo`](https://archlinux.org/packages/community/x86_64/vdpauinfo)
@@ -37,5 +39,5 @@ $ sudo systemctl enable fstrim.timer tlp.service
   * [`zsh-syntax-highlighting`](https://archlinux.org/packages/community/any/zsh-syntax-highlighting)
 
 ```
-$ yay -S adw-gtk3 capitaine-cursors gdm-plymouth-nox intel-media-driver intel-media-sdk libva-utils libva-vdpau-driver linux-firmware nerd-fonts-hack noto-fonts-emoji papirus-icon-theme plymouth powertop starship tlp toolbox vdpauinfo vulkan-intel xorg-xwayland-hidpi-git zsh zsh-autosuggestions zsh-syntax-highlighting
+$ yay -S adw-gtk3 capitaine-cursors gdm-plymouth-nox intel-media-driver intel-media-sdk libva-utils libva-vdpau-driver linux-firmware nerd-fonts-hack noto-fonts-emoji papirus-icon-theme plymouth powertop starship thermald tlp toolbox vdpauinfo vulkan-intel xorg-xwayland-hidpi-git zsh zsh-autosuggestions zsh-syntax-highlighting
 ```
