@@ -35,9 +35,9 @@ $ yay -S adw-gtk3 capitaine-cursors gdm-plymouth-nox intel-media-driver intel-me
 ```
 
 ## Service(s) & Timer(s)
-  * `fstrim.timer` (Requires _util-linux_ package)
-  * `thermald.service` (Requires _thermald_ package)
-  * `tlp.service` (Requires _tlp_ package)
+  * [`fstrim.timer`](https://wiki.archlinux.org/title/Solid_state_drive#TRIM) (Requires _util-linux_ package)
+  * [`thermald.service`](https://wiki.archlinux.org/title/CPU_frequency_scaling#thermald) (Requires _thermald_ package)
+  * [`tlp.service`](https://wiki.archlinux.org/title/TLP) (Requires _tlp_ package)
 
 ```
 $ sudo systemctl enable --now fstrim.timer thermald.service tlp.service
