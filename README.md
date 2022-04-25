@@ -4,15 +4,6 @@
  <img src=".github/img/screenshot.png" width="85%"/>
 </div>
 
-## Enabled service(s)/timer(s)
-  * `fstrim.timer`
-  * `thermald.service` (Requires _thermald_ package)
-  * `tlp.service` (Requires _tlp_ package)
-
-```
-$ sudo systemctl enable --now fstrim.timer thermald.service tlp.service
-```
-
 ## Packages
   * [`adw-gtk3`](https://aur.archlinux.org/packages/adw-gtk3)
   * [`capitaine-cursors`](https://archlinux.org/packages/community/any/capitaine-cursors)
@@ -40,4 +31,13 @@ $ sudo systemctl enable --now fstrim.timer thermald.service tlp.service
 
 ```
 $ yay -S adw-gtk3 capitaine-cursors gdm-plymouth-nox intel-media-driver intel-media-sdk libva-utils libva-vdpau-driver linux-firmware nerd-fonts-hack noto-fonts-emoji papirus-icon-theme plymouth powertop starship thermald tlp toolbox vdpauinfo vulkan-intel xorg-xwayland-hidpi-git zsh zsh-autosuggestions zsh-syntax-highlighting
+```
+
+## Service(s) & Timer(s)
+  * `fstrim.timer`
+  * `thermald.service` (Requires _thermald_ package)
+  * `tlp.service` (Requires _tlp_ package)
+
+```
+$ sudo systemctl enable --now fstrim.timer thermald.service tlp.service
 ```
