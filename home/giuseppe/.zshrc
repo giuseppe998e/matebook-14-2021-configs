@@ -25,3 +25,10 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_REDUCE_BLANKS
 
+# Aliases
+## TLP
+alias tlp-ac="sudo tlp ac"
+alias tlp-bat="sudo tlp bat"
+## Toolbox
+alias trun="toolbox run"
+alias tenter="toolbox enter"

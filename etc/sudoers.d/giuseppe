@@ -1,0 +1,2 @@
+giuseppe ALL=(ALL) ALL
+giuseppe ALL=(root) NOPASSWD:/bin/tlp,/bin/tlp-stat
