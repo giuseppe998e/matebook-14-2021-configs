@@ -10,7 +10,7 @@
 
 // The range (in source pixels) at which to sample for neighbours. Higher values
 // will find more gradients, but lower values will deband more aggressively.
-#define RANGE 8
+#define RANGE 16
 
 // The number of debanding iterations to perform. Each iteration samples from
 // random positions, so increasing the number of iterations is likely to
