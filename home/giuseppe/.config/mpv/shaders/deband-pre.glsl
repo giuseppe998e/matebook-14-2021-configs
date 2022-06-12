@@ -4,8 +4,8 @@
 
 //------------ Configuration section ------------
 // The threshold of difference below which a pixel is considered to be part of
-// a gradient. Higher = more debanding, but setting it too high diminishes image
-// details.
+// a gradient.
+// Higher = more debanding, but setting it too high diminishes image details.
 #define THRESHOLD 48
 
 // The range (in source pixels) at which to sample for neighbours. Higher values
@@ -71,6 +71,7 @@ vec4 sample(sampler2D tex, vec2 pos, vec2 tex_size) {
         col = mix(avg, col, greaterThan(diff, vec4(THRESHOLD / (i * 16384.0))));
     }
 
+#if (GRAIN > 0)
     // Add some random noise to the output
     vec3 noise;
 
@@ -84,6 +85,8 @@ vec4 sample(sampler2D tex, vec2 pos, vec2 tex_size) {
     h = PERMUTE(h);
 
     col.rgb += (GRAIN / 8192.0) * (noise - vec3(0.5));
+#endif
 
     return col;
 }
+
