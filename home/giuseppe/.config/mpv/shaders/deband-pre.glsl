@@ -66,8 +66,8 @@ vec4 sample(sampler2D tex, vec2 pos, vec2 tex_size) {
 
     for (int i = 1; i <= ITERATIONS; i++) {
         // Use the average instead if the difference is below the threshold
-        vec4 avg = average(tex, pos, i * RANGE, h);
-        vec4 diff = abs(col - avg);
+        vec4 avg  = average(tex, pos, i * RANGE, h),
+             diff = abs(col - avg);
         col = mix(avg, col, greaterThan(diff, vec4(THRESHOLD / (i * 16384.0))));
     }
 
