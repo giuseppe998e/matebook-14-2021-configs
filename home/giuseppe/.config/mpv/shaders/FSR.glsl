@@ -70,15 +70,16 @@
 #endif
 
 // Filtering for a given tap for the scalar.
-void FsrEasuTap(inout float aC,  // Accumulated color, with negative lobe.
-                inout float aW,  // Accumulated weight.
-                vec2 off,        // Pixel offset from resolve position to tap.
-                vec2 dir,        // Gradient direction.
-                vec2 len,        // Length.
-                float lob,       // Negative lobe strength.
-                float clp,       // Clipping point.
-                float c)         // Tap color.
-{
+void FsrEasuTap(
+    inout float aC,  // Accumulated color, with negative lobe.
+    inout float aW,  // Accumulated weight.
+    vec2 off,        // Pixel offset from resolve position to tap.
+    vec2 dir,        // Gradient direction.
+    vec2 len,        // Length.
+    float lob,       // Negative lobe strength.
+    float clp,       // Clipping point.
+    float c          // Tap color.
+) {
     // Rotate offset by direction.
     vec2 v;
     v.x = (off.x * ( dir.x)) + (off.y * dir.y);
@@ -363,7 +364,7 @@ vec4 hook() {
     dir *= vec2(dirR);
 
     // Transform from {0 to 2} to {0 to 1} range, and shape with square.
-    len = len * 0.5;
+    len *= 0.5;
     len *= len;
 
     // Stretch kernel {1.0 vert|horz, to sqrt(2.0) on diagonal}.
