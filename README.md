@@ -6,7 +6,13 @@
 <br>
 This configuration is used on ArchLinux with Gnome + Wayland (1-1 gestures & fractional scaling at 150%).<br>
 It tries to maximize battery life: currently reaching 13/14 hours of normal use, mainly programming software (with the "battery care" set at 80%).<br>
-Another goal is to try to keep a system theme as equal as possible among all applications.
+Another goal is to try to keep a system theme as equal as possible among all applications.<br><br>
+
+**N.B.**
+- The files in `/boot/loader` are used for `systemd-boot` and **must** be edited
+- The files in `/etc/sudoers.d/` uses my username, so should be edited
+- The changes of `/etc/dconf/...` must be applied using `sudo dconf update`
+- When the battery reaches `5%` the system goes into hibernation, this behavior can be changed in the `/etc/udev/rules.d/99-lowbat.rules` file
 
 ## Packages
   * [`adw-gtk3`](https://aur.archlinux.org/packages/adw-gtk3)
@@ -46,3 +52,7 @@ $ yay -S adw-gtk3 capitaine-cursors gdm-plymouth-nox intel-media-driver intel-me
 ```
 $ sudo systemctl enable --now fstrim.timer thermald.service tlp.service
 ```
+
+## See also
+- [giuseppe998e/GDM Fractional Scaling](https://gist.github.com/giuseppe998e/76127934e9bdc4bac45ebebcbd8e7954)
+- [LarryIsBetter/Linux Laptop Optimizations](https://gist.github.com/LarryIsBetter/218fda4358565c431ba0e831665af3d1)
