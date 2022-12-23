@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Removing orphaned packages...
+When = PostTransaction
+Exec = /bin/sh -c 'ORPHANS="$(/usr/bin/pacman -Qtdq)"; [ ! -z "$ORPHANS" ] && /usr/bin/pacman -Rns "$ORPHANS" || /usr/bin/echo "==> No orphaned packages found."'
