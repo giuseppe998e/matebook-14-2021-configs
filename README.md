@@ -43,7 +43,7 @@ Another goal is to try to keep a system theme as equal as possible among all app
   * [`zsh-syntax-highlighting`](https://archlinux.org/packages/community/any/zsh-syntax-highlighting)
 
 ```
-$ yay -S adw-gtk3 capitaine-cursors gdm-plymouth-nox intel-media-driver intel-media-sdk libva-utils libva-vdpau-driver linux-firmware nerd-fonts-hack noto-fonts-emoji papirus-icon-theme pacman-contrib plymouth powertop reflector starship thermald tlp toolbox util-linux vdpauinfo vulkan-intel xorg-xwayland-hidpi-git zsh zsh-autosuggestions zsh-syntax-highlighting
+$ yay -S adw-gtk3 capitaine-cursors gdm-plymouth-nox intel-media-driver intel-media-sdk libva-utils libva-vdpau-driver linux-firmware nerd-fonts-hack noto-fonts-emoji pacman-contrib papirus-icon-theme plymouth powertop reflector starship thermald tlp toolbox util-linux vdpauinfo vulkan-intel xorg-xwayland-hidpi-git zsh zsh-autosuggestions zsh-syntax-highlighting
 ```
 
 ## Service(s) & Timer(s)

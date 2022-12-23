@@ -1,10 +1,12 @@
 [Trigger]
-Type = Package
 Operation = Install
 Operation = Upgrade
+Type = Package
+Target = papirus-icon-theme
+Target = capitaine-cursors
 Target = default-cursors
 
 [Action]
 Description = Set Papirus + Capitaine(light) cursor the default icons theme system-wide...
 When = PostTransaction
-Exec = /bin/sh -c 'ICONS_DIR="/usr/share/icons"; DEFAULT="default"; PAPIRUS="Papirus"; CAPITAINE="capitaine-cursors-light"; rm -rf "$ICONS_DIR/$DEFAULT/*" && ln -s "$ICONS_DIR/$CAPITAINE/cursors" "$ICONS_DIR/$DEFAULT/cursors" && cp "$ICONS_DIR/$PAPIRUS/index.theme" "$ICONS_DIR/$DEFAULT" && sed -i "s/inherits=\(.*$\)/Inherits=$CAPITAINE,\1/i" "$ICONS_DIR/$DEFAULT/index.theme"'
+Exec = /bin/sh -c 'ICONS_DIR="/usr/share/icons"; DEFAULT="default"; PAPIRUS="Papirus"; CAPITAINE="capitaine-cursors-light"; rm -f "$ICONS_DIR/$DEFAULT/cursors" && rm -f "$ICONS_DIR/$DEFAULT/index.theme" && ln -s "$ICONS_DIR/$CAPITAINE/cursors" "$ICONS_DIR/$DEFAULT/cursors" && cp "$ICONS_DIR/$PAPIRUS/index.theme" "$ICONS_DIR/$DEFAULT/" && sed -i "s/inherits=\(.*$\)/Inherits=$CAPITAINE,\1/i" "$ICONS_DIR/$DEFAULT/index.theme"'

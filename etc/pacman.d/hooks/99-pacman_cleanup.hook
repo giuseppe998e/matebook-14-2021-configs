@@ -1,8 +1,9 @@
+# https://aur.archlinux.org/packages/pacman-cleanup-hook
 [Trigger]
-Type = Package
-Operation = Remove
 Operation = Install
 Operation = Upgrade
+Operation = Remove
+Type = Package
 Target = *
 
 [Action]

@@ -8,4 +8,4 @@ Target = *
 [Action]
 Description = Removing orphaned packages...
 When = PostTransaction
-Exec = /bin/sh -c 'ORPHANS="$(/usr/bin/pacman -Qtdq)"; [ ! -z "$ORPHANS" ] && /usr/bin/pacman -Rns "$ORPHANS" || /usr/bin/echo "==> No orphaned packages found."'
+Exec = /bin/sh -c 'ORPHANS="$(pacman -Qtdq)"; [ ! -z "$ORPHANS" ] && pacman -Rns "$ORPHANS" || echo "==> No orphaned packages found."'
