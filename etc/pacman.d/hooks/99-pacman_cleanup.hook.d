@@ -10,4 +10,4 @@ Target = *
 Description = Removing obsolete cached package files (keeping the latest two)...
 Depends = pacman-contrib
 When = PostTransaction
-Exec = /usr/bin/paccache -rvk2
+Exec = /bin/sh -c 'paccache -rk1; paccache -ruk0'
