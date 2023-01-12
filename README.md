@@ -59,3 +59,4 @@ $ sudo systemctl enable --now fstrim.timer paccache.timer thermald.service tlp.s
 ## See also
 - [giuseppe998e/GDM Fractional Scaling](https://gist.github.com/giuseppe998e/76127934e9bdc4bac45ebebcbd8e7954)
 - [LarryIsBetter/Linux Laptop Optimizations](https://gist.github.com/LarryIsBetter/218fda4358565c431ba0e831665af3d1)
+- [Completely disable XWayland (or make it auto-closeable)](https://www.reddit.com/r/gnome/comments/xa18en/comment/inr91aj/)
