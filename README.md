@@ -1,4 +1,4 @@
-# My Matebook 14 (2021) configurations
+# My Matebook 14 (Intel 2021) configurations
 
 <div align="center">
  <img src=".github/img/screenshot.png" width="85%"/>
@@ -10,7 +10,7 @@ Another goal is to try to keep a system theme as equal as possible among all app
 
 **N.B.**
 - The files in `/boot/loader` are used for `systemd-boot` and **must** be edited
-- The files in `/etc/sudoers.d/` uses my username, so should be edited
+- The files in `/etc/sudoers.d/` use my username, so should be edited
 - The changes of `/etc/dconf/...` must be applied using `sudo dconf update`
 - When the battery reaches `5%` the system goes into hibernation, this behavior can be changed in the `/etc/udev/rules.d/99-lowbat.rules` file
 
