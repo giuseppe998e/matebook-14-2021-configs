@@ -5,7 +5,7 @@
 </div>
 <br>
 This configuration is used on ArchLinux with Gnome + Wayland (1-1 gestures & fractional scaling at 150%).<br>
-It tries to maximize battery life: currently reaching 13/14 hours of normal use, mainly programming software (with the "battery care" set at 80%).<br>
+It tries to maximize battery life: currently reaching (_up to a max. of_) 13/14 hours of use, mainly programming software (with the "battery care" set at 80%).<br>
 Another goal is to try to keep a system theme as equal as possible among all applications.<br><br>
 
 **N.B.**
